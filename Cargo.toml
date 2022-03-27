@@ -1,0 +1,40 @@
+[package]
+description = "Homoglyphs utils"
+keywords = ["Homoglyph", "command", "monitoring"]
+license-file = "LICENSE"
+name = "hmg-utils"
+repository = "https://github.com/blacknon/hmg-utils"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1"
+bytes = "1"
+clap = "2.20.3"
+crossbeam = "0.8.1"
+grep = {version = "0.2"}
+grep-matcher = {version = "0.1"}
+grep-pcre2 = {version = "0.1"}
+grep-regex = {version = "0.1"}
+grep-searcher = {version = "0.1.8"}
+ignore = {version = "0.4"}
+itertools = "0.10.3"
+lazy_static = "1.1.1"
+memchr = "2"
+num_cpus = "1.8"
+pathdiff = "0.2"
+rayon = {version = "1"}
+regex = "1.5"
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+term = "0.7"
+termcolor = "1.1"
+terminal_size = "0.1"
+unicode-jp = "0.4.0"
+
+[[bin]]
+name = "hmgen"
+path = "src/hmgen.rs"
+
+[[bin]]
+name = "hmgrep"
+path = "src/hmgrep.rs"
